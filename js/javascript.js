@@ -52,16 +52,14 @@ document.querySelector('#formulario').addEventListener('submit', e => {
 	pintarAlumnos(nombre, materia, calificacion1, calificacion2, calificacion3, calificacion4);
 })
 
-import { primeroA, primeroB } from 'lista.json';
 
-function pintaprimeroA(){
-	console.log(primeroA);
-};
-function pintaprimeroB(){
-	console.log(primeroB);
-};
+const datos = async (grupo) => {
+	const respuesta = await fetch ('js/lista.json');
+	const data = await respuesta.json();
 
-const primerA = pintaprimeroA;
-const primerB = pintaprimeroB;
+	document.querySelector('#lista').innerHTML="";
 
-
+	data[grupo].map(({nombre, materia, calificacion1, calificacion2, calificacion3, calificacion4}) => {
+		pintarAlumnos(nombre, materia, calificacion1, calificacion2, calificacion3, calificacion4)
+	});
+}

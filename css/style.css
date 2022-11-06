@@ -29,7 +29,7 @@
 }
 
 .formulario__titulo{
-	font-size: 30px;
+	font-size: 35px;
 	text-transform: uppercase;
 }
 
@@ -159,17 +159,17 @@
 	grid-column-start: 1;
 	grid-column-end: 3;
 	font-size: 25px;
-	padding: 1.5vh 3vw;
+	padding: 1.5vh 2vw;
 	margin: 2vh;
 	border-radius: 8px;
 	border: none;
-	background: #127bd1a9 ;
+	background: #1887e2a9 ;
 	color: white;
 	transition: all 0.5s;
 }
 
 .cuadro__btn-grupoA:hover{
-	background: #3D8ED1;
+	background: #2595f188;
 	color: white;
 	cursor: pointer;
 }
@@ -179,17 +179,17 @@
 	grid-column-start: 3;
 	grid-column-end: 5;
 	font-size: 25px;
-	padding: 1.5vh 3vw;
+	padding: 1.5vh 2vw;
 	margin: 2vh;
 	border-radius: 8px;
 	border: none;
-	background: #127bd1a9 ;
+	background: #1887e2a9 ;
 	color: white;
 	transition: all 0.5s;
 }
 
 .cuadro__btn-grupoB:hover{
-	background: #3D8ED1;
+	background: #2595f188;
 	color: white;
 	cursor: pointer;
 }
@@ -219,7 +219,7 @@
 
 @media only screen and (max-width: 900px){
 	.formulario__titulo{
-		font-size: 18px;
+		font-size: 23px;
 	}
 
 	.cuadro__nombre{
